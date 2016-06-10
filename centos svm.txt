@@ -1,0 +1,14 @@
+centos svm
+svm install php-devel
+yum install php-pear
+dowload libsvm
+cd libsvm
+mkake lib
+cp libsvm.so.2 /usr/lib64
+cp svm.h /usr/include
+pecl install  -f svm
+cd /etc/php.d/
+cp curl.ini svm.ini
+vim svm.ini 
+chanage curl.so to svm.so
+systemctl restart httpd.service 

@@ -1,0 +1,31 @@
+Curl:
+arm-linux-androideabi-gcc curl.c -o curl.bin -lcurl -lssl -lcrypto -lz  -I"output/curl/include" -L"output/"
+
+
+Curl and Libpcap:
+arm-linux-androideabi-gcc --static curlpcap.c -o curlpcap.bin -lcurl -lssl -lcrypto -lz -lpcap -I"/Users/garytan/Desktop/android-sdk-macosx/android-toolchain/bin/output/libpcap-1.7.4/" -I"output/curl/include" -L"output/" -std=c99
+
+Libpcap:
+arm-linux-androideabi-gcc --static monitor.c -o monitor.bin -lpcap -I"/Users/garytan/Desktop/android-sdk-macosx/android-toolchain/bin/output/libpcap-1.7.4/" -L"/Users/garytan/Desktop/android-sdk-macosx/android-toolchain/bin/output/"
+
+
+arm-linux-androideabi-gcc --static dump.c -o dump.bin -lpcap -I"/Users/garytan/Desktop/android-sdk-macosx/android-toolchain/bin/output/libpcap-1.7.4/" -L"/Users/garytan/Desktop/android-sdk-macosx/android-toolchain/bin/output/"
+
+
+
+arm-linux-androideabi-gcc --static curlpcap.c -o curlpcap.bin -lcurl -lssl -lcrypto -lz -lpcap -I"/Users/garytan/Desktop/android-sdk-macosx/android-toolchain/bin/output/libpcap-1.7.4/" -I"output/curl/include" -L"output/" -std=c99 
+
+/Users/garytan/Documents/libpcap-1.7.4
+
+arm-linux-androideabi-gcc agent.c -o agent.bin -lcurl -lssl -lcrypto -lz -lpcap -I"/Users/garytan/Documents/output/libpcap-1.7.4" -I"output/curl/include" -L"output/" -std=c99
+
+
+
+/Users/garytan/Desktop/android-sdk-macosx/android-toolchain/bin/output/libpcap-1.7.4/
+
+arm-linux-androideabi-gcc post.c -o post.bin -lcurl -lssl -lcrypto -lz  -I"output/curl/include" -L"output/"
+
+
+
+
+

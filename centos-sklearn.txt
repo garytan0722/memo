@@ -1,0 +1,7 @@
+sudo yum install numpy.x86_64
+sudo yum install scipy.x86_64
+wget "https://pypi.python.org/packages/source/p/pip/pip-1.5.4.tar.gz#md5=834b2904f92d46aaa333267fb1c922bb" --no-check-certificate
+tar -xzvf pip-1.5.4.tar.gz
+cd pip-1.5.4
+python setup.py install
+pip install -U scikit-learn

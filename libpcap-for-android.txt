@@ -1,0 +1,14 @@
+先設好環境變數
+export CC=arm-linux-androideabi-gcc
+export RANLIB=arm-linux-androideabi-ranlib
+export AR=arm-linux-androideabi-ar
+export LD=arm-linux-androideabi-ld
+export LDFLAGS=-static
+tar libpcap-1.7.4
+./configure --host=arm-linux --with-pcap=linux ac_cv_linux_vers=2
+make
+arm-linux-androideabi-gcc -static -lpcap -I"include path" -L"library path"
+
+如果不想要-L -I path 想要直接-lpcap就好
+就把編譯出來的.a檔放進 toolchain/sysroot/usr/lib 
+.h 放進 toolchain/sysroot/usr/include
