@@ -1,0 +1,8 @@
+參考網頁：http://blog.cavedu.com/%E7%89%A9%E8%81%AF%E7%B6%B2/raspberrypi-%E5%96%AE%E6%9D%BF%E9%9B%BB%E8%85%A6/%E5%AE%89%E8%A3%9Dopencv-%E6%96%BC-raspberry-pi-banana-pi/
+
+需修改
+cmake -DCMAKE_BUILD_TYPE=RELEASE -DCMAKE_INSTALL_PREFIX=/usr/local 
+make -j 4
+
+
+
