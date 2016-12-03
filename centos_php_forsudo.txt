@@ -1,0 +1,4 @@
+visudo
+apache ALL=NOPASSWD:path/to/your exe sh
+and 
+#Defaults    requiretty
